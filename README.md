@@ -77,6 +77,7 @@ MOV AX,Number
 PUSH AX
 
 
+
 There are only 2 types of tokens:
 
 1. Operator: + – * / % ( )
