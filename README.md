@@ -35,7 +35,7 @@ POP BX
 ADD AX,BX
 PUSH AX
 
-\– 
+– 
 POP AX
 POP BX
 SUB AX,BX
@@ -84,20 +84,37 @@ Example:
 C:\> Eval /?
 Eval <<expression>>
 C:\> Eval 22 * (50 + (36 / 12) - 16)
+  
 Token[0] = 22 (Number)
+
 Token[1] = * (Operator)
+
 Token[2] = ( (Operator)
+
 Token[3] = 50 (Number)
+
 Token[4] = + (Operator)
+
 Token[5] = ( (Operator)
+
 Token[6] = 36 (Number)
+
 Token[7] = / (Operator)
+
 Token[8] = 12 (Number)
+
 Token[9] = ) (Operator)
+
 Token[10] = - (Operator)
+
 Token[11] = 16 (Operator)
+
 Token[12] = ) (Operator)
+
 << Assembly Code for the above Expression>>
+
 C:\> masm output.asm
+
 C:\> output
+
 814
