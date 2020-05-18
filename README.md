@@ -30,40 +30,52 @@ Factor → Number Factor.val = ASM Code for Number
 Assembly Code:
 
 \+ 
+
 POP AX
 POP BX
 ADD AX,BX
 PUSH AX
 
+
 – 
+
 POP AX
 POP BX
 SUB AX,BX
 PUSH AX
 
+
 \* 
+
 POP AX
 POP BX
 MUL BX
 PUSH AX
 
+
 \/ 
+
 POP AX
 POP BX
 MOV DX,0
 DIV BX
 PUSH AX
 
+
 \% 
+
 POP AX
 POP BX
 MOV DX,0
 DIV BX
 PUSH DX
 
+
 Number 
+
 MOV AX,Number
 PUSH AX
+
 
 There are only 2 types of tokens:
 
